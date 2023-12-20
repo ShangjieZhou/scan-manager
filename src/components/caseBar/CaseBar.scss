@@ -1,0 +1,22 @@
+.casebar {
+  display: grid;
+  height: 1.6rem;
+  grid-template-columns: 11fr 3fr 8fr 10fr 4fr 8fr;
+  border-bottom: solid 1px rgb(187, 187, 187);
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(217, 217, 217);
+  }
+  .hiddable {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &#case-bar-title {
+    cursor: default;
+    &:hover {
+      background-color: unset;
+    }
+    height: 2rem;
+    border-bottom: solid 2px rgb(187, 187, 187);
+  }
+}

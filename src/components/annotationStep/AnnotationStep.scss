@@ -1,0 +1,51 @@
+li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 3rem;
+  cursor: pointer;
+
+  h1 {
+    font-size: 1.3rem;
+    color: rgb(94, 93, 93);
+    margin: 0.2rem 0;
+  }
+
+  .bscheck {
+    color: rgb(10, 211, 10);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .bsdot {
+    color: rgb(94, 93, 93);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .bsdot,
+  .bscheck {
+    position: absolute;
+    left: 0;
+    font-size: 3rem;
+  }
+}
+
+li.done {
+  .bsdot {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .bscheck {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+li.in-progress {
+  h1,
+  .bsdot {
+    color: white;
+  }
+}

@@ -1,0 +1,35 @@
+.bar-container {
+  width: 100%;
+}
+
+.indicator-text {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7fr 2fr 1fr;
+  align-items: center;
+
+  .index {
+    text-align: start;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.indicator-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorbar {
+  display: grid;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+
+  .color {
+    height: 100%;
+  }
+}
